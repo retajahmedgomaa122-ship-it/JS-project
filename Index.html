@@ -1,1 +1,79 @@
+<div class="card">
+  
+  <!-- Step 1: Love Gauge -->
+  <div id="step-1">
+    <div class="cat-avatar">
+      <img id="cat-img" src="https://api.iconify.design/fluent-emoji:crying-cat.svg" alt="Cat Status">
+    </div>
+    <h2 id="status-title">How much do you love me?</h2>
+    <div class="percent-text" id="percent-display">0%</div>
 
+    <div class="gauge-container">
+      <div class="gauge-bg"></div>
+      <div class="gauge-mask"></div>
+      <div class="gauge-title">love</div>
+    </div>
+
+    <input type="range" id="slider" min="0" max="100" value="0">
+    
+    <div>
+      <button id="next-step-btn" class="next-btn hidden" onclick="showStep(2)">Next →</button>
+    </div>
+  </div>
+
+  <!-- Step 2: Gifts Menu -->
+  <div id="step-2" class="hidden">
+    <h2>You passed the love test</h2>
+    <p style="color: #880e4f; font-size: 14px;">Your surprises are waiting for you</p>
+
+    <div class="gifts-row">
+      <div class="gift-card" onclick="showSurprise('bouquet')">
+        <img src="https://api.iconify.design/fluent-emoji:wrapped-gift.svg" alt="Gift">
+      </div>
+      <div class="gift-card" onclick="showSurprise('reasons')">
+        <img src="https://api.iconify.design/fluent-emoji:wrapped-gift.svg" alt="Gift">
+      </div>
+      <div class="gift-card" onclick="showSurprise('letter')">
+        <img src="https://api.iconify.design/fluent-emoji:wrapped-gift.svg" alt="Gift">
+      </div>
+    </div>
+  </div>
+
+  <!-- Surprise 1: Bouquet -->
+  <div id="surprise-bouquet" class="hidden bouquet-box">
+    <h2>Your Bouquet 💐</h2>
+    <img src="https://api.iconify.design/fluent-emoji:bouquet.svg" alt="Bouquet">
+    <div class="text-quote">
+      "You make my heart bloom!" <br>
+      "Life feels sweeter with you"
+    </div>
+    <button class="next-btn" onclick="showStep(2)">Next →</button>
+  </div>
+
+  <!-- Surprise 2: Reasons Why I Love You -->
+  <div id="surprise-reasons" class="hidden">
+    <h2>Reasons Why I Love You 💖</h2>
+    <div class="reason-box">
+      <div class="reason-counter" id="reason-num">Reason #1</div>
+      <div class="reason-title-text" id="reason-head">Because you make me feel understood. 🫶🏻</div>
+      <div class="reason-text" id="reason-content">You don't just listen to me; you actually try to understand what's behind my words. 💗</div>
+    </div>
+    <button class="next-btn" onclick="nextReason()">Tap for Next Reason ✨</button>
+    <br>
+    <button class="next-btn" style="background-color: #ad1457; margin-top: 10px;" onclick="showStep(2)">Back to Gifts →</button>
+  </div>
+
+  <!-- Surprise 3: Letter -->
+  <div id="surprise-letter" class="hidden">
+    <h2>A Letter From My Heart 💌</h2>
+    <div class="letter-content">
+      Happy birthday, my love🫀✨<br><br>
+      I honestly don’t know how to put into words how much you mean to me and how much having you in my life has changed so many things for the better. I’m grateful for every little moment, every conversation, every laugh, and every memory we’ve shared together.<br><br>
+      I hope this new year of your life brings you all the happiness, success, and beautiful things you deserve. I hope you achieve everything you dream of and always have a reason to smile.<br><br>
+      No matter how many years pass, I hope you always remember that there’s someone who genuinely wants to see you happy, successful, and proud of yourself.<br><br>
+      Happy birthday, my heart. I hope the days ahead are even more beautiful than everything that came before them. I love you🫀
+    </div>
+    <button class="next-btn" onclick="showStep(2)">Next →</button>
+  </div>
+
+</div>
