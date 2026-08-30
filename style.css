@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Sacramento&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+body {
+  background-color: #fce4ec;
+  background-image: radial-gradient(#f8bbd0 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 3px solid #ff80ab;
+  border-radius: 30px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(255, 128, 171, 0.2);
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.cat-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 10px;
+}
+
+.cat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h2 {
+  color: #ad1457;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.percent-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #d81b60;
+  margin-bottom: 20px;
+}
+
+.gauge-container {
+  position: relative;
+  width: 220px;
+  height: 110px;
+  margin: 0 auto 20px;
+}
+
+.gauge-bg {
+  width: 220px;
+  height: 110px;
+  border-radius: 110px 110px 0 0;
+  background: conic-gradient(from 270deg at 50% 100%, #ff80ab 0deg 180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.gauge-mask {
+  width: 170px;
+  height: 85px;
+  background: white;
+  border-radius: 85px 85px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+
+.gauge-title {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 32px;
+  color: #ad1457;
+}
+
+input[type=range] {
+  width: 100%;
+  accent-color: #ff4081;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.next-btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(255, 64, 129, 0.3);
+  transition: transform 0.2s;
+}
+
+.next-btn:active {
+  transform: scale(0.95);
+}
+
+.gifts-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0 10px;
+}
+
+.gift-card {
+  background: #fff0f5;
+  border: 2px dashed #ff80ab;
+  border-radius: 20px;
+  padding: 15px 10px;
+  width: 90px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+}
+
+.gift-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.bouquet-box img {
+  width: 180px;
+  margin: 15px 0;
+}
+
+.text-quote {
+  color: #880e4f;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.reason-box {
+  background: #fff0f5;
+  border: 2px solid #ff80ab;
+  border-radius: 20px;
+  padding: 20px 15px;
+  margin: 15px 0;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(255, 128, 171, 0.15);
+}
+
+.reason-counter {
+  color: #d81b60;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reason-title-text {
+  color: #ad1457;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.reason-text {
+  color: #880e4f;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.letter-content {
+  background: #fff8e1;
+  border: 2px dashed #ffe082;
+  border-radius: 15px;
+  padding: 20px;
+  color: #5d4037;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  direction: ltr;
+  margin: 15px 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
